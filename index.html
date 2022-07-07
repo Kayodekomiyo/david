@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mothercont{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            align-content: space-around;
+        }
+
+        .line1{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form name="mothercont" action="process.php" method="post">
+        <div class="line1">
+        <span class="item1"><label for="ppu">Enter thr Price per unit of each product: </label></span>
+        <span class="item2"><input type="number" name="ppu" id="ppu" placeholder="eg. 6, 100, 30" required></span>
+        </div>
+    
+        <div class="line2">
+            <span class="item3"><label for="qp">Enter the Quantity of products: </label></span>
+            <span class="item4"><input type="number" name="qp" id="qp" placeholder="eg. 10, 5, 2" required></span>
+        </div>
+        
+        <div class="line3">
+            <span class="item5"><input type="submit" name="submit" value="Submit"></span>
+            <span class="item6"><input type="reset" value="Reset"></span>
+        </div>
+        </form>
+        <p>&#8593</p>
+        <p>&#8593</p>
+        <p>&#8593</p>
+
+</body>
+</html>
